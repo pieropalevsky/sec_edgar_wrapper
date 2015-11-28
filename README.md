@@ -1,9 +1,13 @@
-# python-sec-edgar-wrapper
+# sec_edgar_wrapper
 
-python-sec-edgar-wrapper is a work in progress wrapper for SEC Edgar API or lack thereof. It also contains parsers the following forms
+sec_edgar_wrapper is a work in progress wrapper for SEC Edgar API or lack thereof. It also contains parsers the following forms
 
   - 13F-HR
   - More will be added as needed
+
+# Installation
+
+    $ pip install sec_edgar_wrapper
 
 # Usage
 
@@ -15,7 +19,11 @@ python-sec-edgar-wrapper is a work in progress wrapper for SEC Edgar API or lack
 - Tests
 
 # Example
+
     import json
+    
+    from sec_edgar_wrapper import SECEdgarWrapper
+    
     
     api_call = SECEdgarWrapper(cik='0001263508', filing_type="13F")
     page = api_call.next_page()
