@@ -11,3 +11,4 @@ lib
 lib64
 *.pyc
 *.pyo
+*.egg-info
