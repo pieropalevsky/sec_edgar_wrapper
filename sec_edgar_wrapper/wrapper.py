@@ -4,7 +4,7 @@ import itertools
 import xmltodict
 import requests
 
-from utils import full_filing_url
+from sec_edgar_wrapper.utils import full_filing_url
 
 
 class SECEdgarWrapper:
@@ -38,7 +38,7 @@ class SECEdgarWrapper:
 
         self._page_iterator = itertools.count(start=0, step=pagination)
         self.cik = cik
-        self.query_string = urllib.parse.urlencode({'CIK': cik,
+        self._query_string = urllib.parse.urlencode({'CIK': cik,
                                                     'type': filing_type,
                                                     'count': pagination,
                                                     'dateb': date_before,
@@ -54,7 +54,7 @@ class SECEdgarWrapper:
         """
         page_query = '&' + urllib.parse.urlencode(
             {'start': next(self._page_iterator)})
-        feed_url = self.base_company_url + self.query_string + page_query
+        feed_url = self.base_company_url + self._query_string + page_query
         feed = requests.get(feed_url).text
         feed_dict = xmltodict.parse(feed)
 

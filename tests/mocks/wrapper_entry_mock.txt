@@ -1,0 +1,32 @@
+{
+  "category": {
+    "@label": "form type",
+    "@scheme": "http://www.sec.gov/",
+    "@term": "13F-HR"
+  },
+  "content": {
+    "@type": "text/xml",
+    "accession-nunber": "0000950123-15-011710",
+    "act": "34",
+    "file-number": "028-14285",
+    "file-number-href": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&filenum=028-14285&owner=exclude&count=40",
+    "filing-date": "2015-11-13",
+    "filing-href": "http://www.sec.gov/Archives/edgar/data/1397144/000095012315011710/0000950123-15-011710.txt",
+    "filing-type": "13F-HR",
+    "film-number": "151226875",
+    "form-name": "Quarterly report filed by institutional managers, Holdings",
+    "size": "11 KB"
+  },
+  "id": "urn:tag:sec.gov,2008:accession-number=0000950123-15-011710",
+  "link": {
+    "@href": "http://www.sec.gov/Archives/edgar/data/1397144/000095012315011710/0000950123-15-011710.txt",
+    "@rel": "alternate",
+    "@type": "text/html"
+  },
+  "summary": {
+    "@type": "html",
+    "#text": "<b>Filed:</b> 2015-11-13 <b>AccNo:</b> 0000950123-15-011710 <b>Size:</b> 11 KB"
+  },
+  "title": "13F-HR  - Quarterly report filed by institutional managers, Holdings",
+  "updated": "2015-11-13T06:49:22-05:00"
+}
