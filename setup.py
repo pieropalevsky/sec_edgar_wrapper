@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='sec_edgar_wrapper',
-      version='0.1.0',
+      version='0.1.1',
       author='Piero Palevsky',
       author_email='ppalevsky@gmail.com',
       install_requires=[
